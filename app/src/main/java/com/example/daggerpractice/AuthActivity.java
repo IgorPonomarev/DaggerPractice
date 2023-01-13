@@ -1,10 +1,11 @@
 package com.example.daggerpractice;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class AuthActivity extends AppCompatActivity {
+import dagger.android.support.DaggerAppCompatActivity;
+
+//extends DaggerAppCompatActivity to has premade injector
+public class AuthActivity extends DaggerAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
