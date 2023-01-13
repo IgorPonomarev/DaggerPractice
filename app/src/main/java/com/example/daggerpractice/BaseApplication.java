@@ -11,6 +11,7 @@ public class BaseApplication extends DaggerApplication {
     @Override
     protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
         //creating a app-lifetime component
+        //return null;
         return DaggerAppComponent.builder().application(this).build();
     }
 }
