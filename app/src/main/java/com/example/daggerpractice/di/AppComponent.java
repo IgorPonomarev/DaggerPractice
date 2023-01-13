@@ -9,7 +9,7 @@ import dagger.Component;
 import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 
-//if not android dagger then no extends and no module
+//if not android dagger then no extends and no first module
 @Component(
         modules = {
                 AndroidSupportInjectionModule.class,
