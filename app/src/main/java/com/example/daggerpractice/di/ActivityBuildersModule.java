@@ -10,6 +10,7 @@ import dagger.android.ContributesAndroidInjector;
 public abstract class ActivityBuildersModule {
 
     //need one for every Activity
+    //automatically creates a subcomponent
     @ContributesAndroidInjector(
             modules = {AuthViewModelsModule.class}
     )
