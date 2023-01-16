@@ -53,7 +53,15 @@ dependencies {
     //Retrofit
     def retrofit_version = "2.9.0"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    //GSON converter
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    //Adapter for RxJava3
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofit_version"
+
+    //RxJava
+    def rxjava_version = "3.1.5"
+    implementation "io.reactivex.rxjava3:rxjava:$rxjava_version"
+
 
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
