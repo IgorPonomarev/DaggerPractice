@@ -49,6 +49,8 @@ dependencies {
     //implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    //reactive streams to livedata
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version"
 
     //Retrofit
     def retrofit_version = "2.9.0"
