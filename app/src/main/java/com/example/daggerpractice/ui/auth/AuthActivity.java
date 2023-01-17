@@ -143,6 +143,11 @@ public class AuthActivity extends DaggerAppCompatActivity implements View.OnClic
         if (TextUtils.isEmpty(userID.getText().toString())) {
             return;
         }
-        viewModel.authenticateWithId(Integer.parseInt(userID.getText().toString()));
+        try {
+            viewModel.authenticateWithId(Integer.parseInt(userID.getText().toString()));
+        } catch (NumberFormatException e) {
+            Log.e(TAG, "attemptLogin: non valid id", e);
+            viewModel.authenticateWithId(-1);
+        }
     }
 }
